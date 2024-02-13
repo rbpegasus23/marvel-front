@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import Cookies from "js-cookie";
 const Login = ({ setToken, setBckgroundMain }) => {
@@ -71,7 +72,7 @@ const Login = ({ setToken, setBckgroundMain }) => {
 
       <p className="alertMessage">{alertMessage}</p>
 
-      <a href="/signup">Vous n'avez pas encore de compte? Inscrivez-vous</a>
+      <Link to="/signup">Vous n'avez pas encore de compte? Inscrivez-vous</Link>
       <button type="submit">Submit</button>
     </form>
   );
